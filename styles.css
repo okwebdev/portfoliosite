@@ -1,0 +1,126 @@
+* {
+    --main_background: #CAD2C5;
+    --main_text: #2F3E46;
+    --highlite_text: #29B390;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0px;
+    background-color: var(--main_background);
+    font-family: worksans;
+    color: var(--main_text);
+}
+
+a {
+    text-decoration: none;
+    color: var(--main_text);
+}
+
+.linksBar p {
+    margin: 0px;
+    margin-top: 10px;
+}
+
+@font-face {
+    font-family: worksans;
+    src: url(./worksans/WorkSans-VariableFont_wght.ttf);
+}
+
+
+main {
+    background-color: var(--main_background);
+    margin: 0px;
+}
+
+h1 {
+    padding-top: 290px;
+    font-weight: bold;
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.splashContainer {
+    height: 100vh;
+    width: 100%;
+    background-image: url(./cccircularBACKground.svg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    --x: 0px;
+    --y: 0px;
+    background-position: var(--x) var(--y);
+    overflow: none;
+    transition: 280ms all linear;
+    transform: scale(1.1);
+}
+
+.titleContainer {
+    width: 70%;
+    height: 100vh;
+    margin: auto;
+    margin-left: 25%;
+}
+
+.description {
+    margin: 0px;
+    text-align: left;
+}
+
+.linksBar {}
+
+.content {
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
+
+.projectContainer {
+    background-color: var(--main_background);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.projectTitle {
+
+    text-align: center;
+    margin: 100px;
+}
+
+.projectTitle h2 {
+    font-size: 2rem;
+}
+
+.card {
+    margin: 40px;
+    /* display: grid;
+    place-items: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 250px;
+    width: 70vw;
+    background-image: url(./cccircularBACKground.svg);
+    border-radius: 1px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.card p {
+    margin: 0px;
+    width: 70%;
+    text-align: center;
+}
+
+.card:hover {
+    border-style: solid;
+    border-color: var(--highlite_text);
+    color: var(--highlite_text);
+    transition: 100ms all linear;
+}
